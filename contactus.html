@@ -5,49 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | K2 Architects</title>
     <link rel="stylesheet" href="/projects.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.5s, transform 0.3s; /* Smooth transition for hover effect */
+        }
+
+        nav ul li a:hover {
+            color: #c29525; /* Bright color on hover */
+            transform: translateY(-2px); /* Lift effect on hover */
+            border-bottom: 2px solid #c29525; /* Underline effect on hover */
+        }
+
+        #contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #contact-info {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c29525;
+        }
+
+        #map {
+            margin-top: 20px;
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>K2 Architects</h1>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo1.png" width="100" height="100" alt="">
+            </a>
         </div>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="/websiteK2/index.html/#team">Projects</a></li>
+            <li><a href="/contactus.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>We would love to hear from you! Get in touch with us using the form below:</p>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-            <!-- Embed Google Map -->
-            <h3>Our Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5183776412286!2d-122.39825838468082!3d37.79083057975687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e7aaee8f7%3A0x33e5e4d09d8e2a98!2s765%20Market%20St%2C%20San%20Francisco%2C%20CA%2094153%2C%20USA!5e0!3m2!1sen!2s!4v1641549824365!5m2!1sen!2s" width="425" height="325" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Here’s how you can reach us:</p>
+
+        <div id="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong> 9444173706</p>
+            <p><strong>Email:</strong> <a href="mailto:ar8880@gmail.com">ar8880@gmail.com</a></p>
+            <p><strong>Address:</strong> 101, Ozone Apartment, Puranik Layout, Bharat Nagar, Amravati Road, Nagpur</p>
+            <a href="mailto:ar8880@gmail.com" class="cta-button">Get in Touch</a>
         </div>
+
+        <h3>Our Location</h3>
+        <iframe
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5183776412286!2d-122.39825838468082!3d37.79083057975687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e7aaee8f7%3A0x33e5e4d09d8e2a98!2s765%20Market%20St%2C%20San%20Francisco%2C%20CA%2094153%2C%20USA!5e0!3m2!1sen!2s!4v1641549824365!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
     </section>
 
     <footer>
-        <div class="container">
+        <div>
             <p>&copy; 2024 K2 Architects. All rights reserved.</p>
+            <p>9444173706 | <a href="mailto:ar8880@gmail.com">ar8880@gmail.com</a></p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/roshanraut_554/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/roshanraut_554/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/roshanraut_554/" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 
