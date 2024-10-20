@@ -1099,6 +1099,56 @@ textarea:focus {
   background-color: #a8791a; /* Darker shade on hover */
 }
 
+.clients {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid #ddd; /* Subtle border for separation */
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Darker color for better readability */
+}
+
+.client-logos-wrapper {
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  position: relative; /* For positioning */
+}
+
+.client-logos {
+  display: inline-flex; /* Use inline-flex for better control */
+  animation: scroll linear infinite; /* Continuous scrolling */
+}
+
+.client-logo {
+  flex: 0 0 auto; /* Prevent logos from shrinking */
+  margin: 0 15px; /* Adjust margin for better spacing */
+}
+
+.client-logo img {
+  max-width: 150px; /* Adjust width as needed */
+  height: auto;
+  opacity: 0.9; /* Slight transparency for a modern look */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.client-logo img:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Animation for scrolling effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the left by half the width of the logos */
+  }
+}
+
 
 
  
